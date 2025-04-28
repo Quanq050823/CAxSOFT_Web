@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<title>
+			Sự quan trọng của chỉnh sửa postprocessor cho máy CNC - CAxSOFT
+		</title>
+		<meta content="" name="description" />
+		<meta content="" name="keywords" />
+
+		<!-- Favicons -->
+		<link href="assets/img/Logo_CS.png" rel="icon" />
+
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com" rel="preconnect" />
+		<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Vendor CSS Files -->
+		<link
+			href="assets/vendor/bootstrap/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+			rel="stylesheet"
+		/>
+		<link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+		<link
+			href="assets/vendor/glightbox/css/glightbox.min.css"
+			rel="stylesheet"
+		/>
+		<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+		<!-- Main CSS File -->
+		<link href="assets/css/main.css" rel="stylesheet" />
+	</head>
+
+	<body class="blog-details-page">
+		<header id="header" class="header d-flex align-items-center sticky-top">
+			<div
+				class="container-fluid position-relative d-flex align-items-center justify-content-between"
+			>
+				<a
+					href="index.html"
+					class="logo d-flex align-items-center me-auto me-xl-0"
+				>
+					<img src="assets/img/CAxSOFT_Logo.png" alt="" />
+				</a>
+
+				<nav id="navmenu" class="navmenu">
+					<ul>
+						<li>
+							<a href="index.html" class="navtext">Trang Chủ<br /></a>
+						</li>
+						<li class="dropdown navtext">
+							<a href="#"
+								><span>Đào Tạo</span
+								><i class="bi bi-chevron-down toggle-dropdown"></i
+							></a>
+							<ul>
+								<li>
+									<a href="corporatetraining.html">Đào Tạo Doanh Nghiệp</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown navtext">
+							<a href="#"
+								><span>Dịch Vụ</span
+								><i class="bi bi-chevron-down toggle-dropdown"></i
+							></a>
+							<ul>
+								<li>
+									<a href="businessconsultancy.html">Tư Vấn Doanh Nghiệp</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown navtext">
+							<a href="#"
+								><span>Phần mềm</span>
+								<i class="bi bi-chevron-down toggle-dropdown"></i
+							></a>
+							<ul>
+								<li>
+									<a href="nxcam.html"><span>NX</span></a>
+								</li>
+								<li><a href="mastercam.html">Mastercam</a></li>
+								<li><a href="solidworks.html">SolidWorks</a></li>
+								<li><a href="fusion360.html">Fusion 360</a></li>
+								<li><a href="Progecad.html">ProgeCAD</a></li>
+								<li><a href="enjicad.html">enjicad</a></li>
+								<li><a href="tekla.html">Tekla</a></li>
+								<li><a href="gerber.html">Gerber</a></li>
+								<li><a href="zwcad.html">ZWCAD</a></li>
+							</ul>
+						</li>
+						<li class="dropdown navtext">
+							<a href="#"
+								><span>Postprocessor</span>
+								<i class="bi bi-chevron-down toggle-dropdown"></i
+							></a>
+							<ul>
+								<li>
+									<a><span>NX Postprocessor</span></a>
+								</li>
+								<li><a>Mastercam Postprocessor</a></li>
+								<li><a>SolidCAM Postprocessor</a></li>
+								<li><a>Fusion 360 Postprocessor</a></li>
+								<li><a>Catia Postprocessor</a></li>
+							</ul>
+						</li>
+						<li class="dropdown navtext">
+							<a href="blogpage.html"><span>Bài viết</span></a>
+						</li>
+					</ul>
+					<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+				</nav>
+				<div class="custom-dropdown">
+					<button class="btn dropdown-toggle" type="button">Ngôn ngữ</button>
+					<div class="custom-dropdown-content">
+						<div id="english-option">
+							<img
+								src="assets/img/language/vn.svg"
+								alt=""
+								style="width: auto"
+							/>
+							<a href="">Việt Nam</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<!-- Page Title -->
+			<div class="page-title" data-aos="fade">
+				<div
+					class="container d-lg-flex justify-content-between align-items-center"
+				>
+					<h1 class="mb-2 mb-lg-0">Bài viết</h1>
+					<nav class="breadcrumbs">
+						<ol>
+							<li><a href="index.html">Trang chủ</a></li>
+							<li class="current">Bài viết</li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+			<!-- End Page Title -->
+
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8">
+						<!-- Blog Details Section -->
+						<div id="blog-details" class="blog-details section">
+							<div class="container">
+								<article class="article">
+									<h2 class="title">
+										Tối ưu hóa postprocessor Mastercam trên máy CNC Doosan 5
+										trục
+									</h2>
+
+									<div class="meta-top">
+										<ul>
+											<li class="d-flex align-items-center">
+												<i class="bi bi-person"></i>
+												<a href="blog-details.html">DUC QUANG</a>
+											</li>
+											<li class="d-flex align-items-center">
+												<i class="bi bi-clock"></i>
+												<a href="blog-details.html"
+													><time datetime="2024-10-18">18/10/2024</time></a
+												>
+											</li>
+											<li class="d-flex align-items-center">
+												<i class="bi bi-chat-dots"></i>
+												<a href="blog-details.html">0 Comments</a>
+											</li>
+										</ul>
+									</div>
+									<!-- End meta top -->
+
+									<div class="content">
+										<h3>1. Giới thiệu về máy CNC Doosan và Mastercam</h3>
+										<p>
+											Máy CNC Doosan, đặc biệt là các dòng 5 trục như DVF
+											series, nổi bật với khả năng gia công chi tiết phức tạp.
+											Kết hợp với Mastercam, người dùng có thể lập trình gia
+											công hiệu quả, nhưng để máy Doosan chạy tối ưu, cần có
+											postprocessor tùy chỉnh.
+										</p>
+
+										<h3>2. Tầm quan trọng của postprocessor tùy chỉnh</h3>
+										<p>
+											Postprocessor chuyển đổi các đường chạy dao của Mastercam
+											thành mã NC tương thích với máy CNC. Đối với máy Doosan 5
+											trục, postprocessor tùy chỉnh giúp:
+										</p>
+										<ul>
+											<li>
+												<b>Gia công chính xác:</b> Điều khiển trục xoay đồng bộ,
+												tránh sai lệch và lỗi lập trình.
+											</li>
+											<li>
+												<b>Tăng hiệu suất:</b> Tối ưu hóa thời gian gia công và
+												giảm thiểu lỗi cần sửa mã thủ công.
+											</li>
+											<li>
+												<b>Tương thích hệ điều khiển:</b> Đảm bảo chương trình
+												NC tương thích hoàn toàn với hệ điều khiển của máy
+												Doosan.
+											</li>
+										</ul>
+
+										<div
+											class="video-container"
+											style="margin-bottom: 3vh; text-align: center"
+										>
+											<iframe
+												width="560"
+												height="315"
+												src="https://www.youtube.com/embed/Gf7DZvbWVyA"
+												title="YouTube video player"
+												frameborder="0"
+												allow="accelerometer; autoplay; clipboard-write; 
+					encrypted-media; gyroscope; picture-in-picture"
+												allowfullscreen
+											></iframe>
+										</div>
+
+										<h3>3. Thách thức và giải pháp của CAxSOFT</h3>
+										<p>
+											Máy Doosan 5 trục đòi hỏi postprocessor xử lý các chuyển
+											động phức tạp và phù hợp với từng dòng máy. CAxSOFT cung
+											cấp:
+										</p>
+										<ul>
+											<li>
+												<b>Postprocessor tùy chỉnh</b> cho dòng máy Doosan, đảm
+												bảo hoạt động mượt mà.
+											</li>
+											<li>
+												<b>Tương thích hệ điều khiển Fanuc.</b>
+											</li>
+											<li>
+												<b>Dịch vụ mô phỏng và kiểm tra mã NC</b> để đảm bảo độ
+												chính xác trước khi gia công.
+											</li>
+										</ul>
+										<p>
+											Tìm hiểu thêm về dịch vụ postprocessor cho phần mềm
+											MasterCAM tại
+											<a
+												href="https://CAxSOFT.vn/toi-uu-hoa-postprocessor-mastercam-tren-may-cnc-doosan-5-truc.html"
+												>đây</a
+											>.
+										</p>
+										<p>
+											Tìm hiểu thêm về dịch vụ mô phỏng NC code Vericut tại
+											<a href="#">đây</a>.
+										</p>
+
+										<h3>4. Kết luận</h3>
+										<p>
+											Postprocessor tùy chỉnh cho máy Doosan 5 trục là yếu tố
+											quan trọng để tăng hiệu suất và độ chính xác gia công.
+											Liên hệ CAxSOFT để tìm hiểu thêm và nâng cao hiệu quả sản
+											xuất của bạn.
+										</p>
+									</div>
+									<!-- End post content -->
+
+									<div class="meta-bottom">
+										<i class="bi bi-folder"></i>
+										<ul class="cats">
+											<li><a href="#">Postprocessor</a></li>
+										</ul>
+
+										<i class="bi bi-tags"></i>
+										<ul class="tags">
+											<li><a href="#">CNC</a></li>
+											<li><a href="#">Tips</a></li>
+										</ul>
+									</div>
+									<!-- End meta bottom -->
+								</article>
+							</div>
+						</div>
+						<!-- /Blog Details Section -->
+
+						<!-- Blog Author Section -->
+
+						<!-- /Blog Comments Section -->
+					</div>
+
+					<div class="col-lg-4 sidebar">
+						<div class="widgets-container">
+							<!-- Search Widget -->
+							<div class="search-widget widget-item">
+								<h3 class="widget-title">Tìm kiếm</h3>
+								<form action="">
+									<input type="text" />
+									<button type="submit"><i class="bi bi-search"></i></button>
+								</form>
+							</div>
+							<!--/Search Widget -->
+
+							<!-- Categories Widget -->
+							<div class="categories-widget widget-item">
+								<h3 class="widget-title">Thể loại</h3>
+								<ul class="mt-3">
+									<li>
+										<a href="blogpage.html">Blog <span>(11)</span></a>
+									</li>
+								</ul>
+							</div>
+							<div class="tags-widget widget-item">
+								<h3 class="widget-title">Tags</h3>
+								<ul>
+									<li><a href="blogpage.html">Postprocessor</a></li>
+								</ul>
+							</div>
+							<!--/Tags Widget -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer id="footer" class="footer">
+			<div class="footer-top">
+				<div class="container">
+					<div class="row gy-4">
+						<div class="col-lg-4 col-md-6 footer-about">
+							<a href="index.html" class="logo d-flex align-items-center">
+								<span class="sitename">CAxSOFT</span>
+							</a>
+							<div
+								class="footer-contact pt-3"
+								style="padding-top: 0rem !important"
+							>
+								<p>230 Man Thiện, Phường Tăng Nhơn Phú A</p>
+								<p>Thành Phố Thủ Đức, TP.HCM</p>
+								<p class="mt-3">
+									<strong>Phone:</strong> <span>+84 978 047 142</span>
+								</p>
+								<p><strong>Email:</strong> <span>manh.lam@caxsoft.vn</span></p>
+							</div>
+						</div>
+
+						<div class="col-lg-2 col-md-3 footer-links">
+							<h4>DỊCH VỤ</h4>
+							<ul>
+								<li><a href="">Tư vấn doanh nghiệp</a></li>
+							</ul>
+						</div>
+
+						<div class="col-lg-2 col-md-3 footer-links">
+							<h4>ĐÀO TẠO</h4>
+							<ul>
+								<li><a href="">Đào tạo doanh nghiệp</a></li>
+							</ul>
+						</div>
+						<div class="mailbox col-lg-2 col-md-3 footer-links">
+							<h4>LIÊN HỆ</h4>
+							<form action="email" method="post">
+								<input type="hidden" name="action" value="send" />
+								<div class="group">
+									<input type="text" name="businessname" required />
+									<span class="highlight"></span>
+									<span class="bar"></span>
+									<label>Tên công ty</label>
+								</div>
+								<div class="group">
+									<input type="text" name="customeremail" required />
+									<span class="highlight"></span>
+									<span class="bar"></span>
+									<label>Email</label>
+								</div>
+								<div class="group">
+									<input type="text" name="phonenum" required />
+									<span class="highlight"></span>
+									<span class="bar"></span>
+									<label>Số điện thoại</label>
+								</div>
+								<div class="group">
+									<input type="text" name="content" required />
+									<span class="highlight"></span>
+									<span class="bar"></span>
+									<label>Nội dung</label>
+								</div>
+								<button type="submit">Send</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Scroll Top -->
+		<a
+			href="#"
+			id="scroll-top"
+			class="scroll-top d-flex align-items-center justify-content-center"
+			><i class="bi bi-arrow-up-short"></i
+		></a>
+
+		<!-- Preloader -->
+		<div id="preloader"></div>
+
+		<!-- Vendor JS Files -->
+		<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/vendor/php-email-form/validate.js"></script>
+		<script src="assets/vendor/aos/aos.js"></script>
+		<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+		<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+		<script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+		<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+		<!-- Main JS File -->
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
